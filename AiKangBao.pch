@@ -1,0 +1,51 @@
+//
+//  AiKangBao.pch
+//  AiKangBao
+//
+//  Created by ydcq on 15/5/11.
+//  Copyright (c) 2015年 LiuJian. All rights reserved.
+//
+
+#ifndef AiKangBao_AiKangBao_pch
+#define AiKangBao_AiKangBao_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//获取系统版本
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#define CurrentSystemVersion [[UIDevice currentDevice] systemVersion]
+
+//获取设备的物理高度
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+//获取设备的物理宽度
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#define BaseURL @"http://118.123.16.62/health/api/user"
+#define apiUrl @"http://www.zhengkang168.com/health/api"
+#import "AFNetworking.h"
+#import "BaseHttpRequest.h"
+#import "BaseHttpRequestResult.h"
+#import "BaseNavigationController.h"
+#import "BaseView.h"
+#import "BaseViewController.h"
+#import "UIView+Additions.h"
+#import "UIViewExt.h"
+#import "UserInformation.h"
+//define this constant if you want to use Masonry without the 'mas_' prefix
+//#define MAS_SHORTHAND
+//
+////define this constant if you want to enable auto-boxing for default syntax
+//#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h"
+#import "UIColor+HexColor.h"
+#import "CustomMBProgressHUD.h"
+#import "SVProgressHUD.h"
+#import "NSDictionary+Help.h"
+#import "MJRefresh.h"
+#import "UIColor+HexColor.h"
+//海康威视
+#define SERVER_ADDRESS @"server_address"
+#define USER_NAME   @"user_name"
+#define PASSWORD    @"password"
+#define SERVER_VERSION @"server_version"
+#endif

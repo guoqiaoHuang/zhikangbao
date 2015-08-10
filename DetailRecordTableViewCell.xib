@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="DetailRecordTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="血压" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftQ-In-8wu">
+                        <rect key="frame" x="8" y="17" width="69" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="iC1-SG-Rcc"/>
+                            <constraint firstAttribute="width" constant="69" id="nVD-17-IwM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="毫米汞柱（mmhg）" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S05-pE-Xzh">
+                        <rect key="frame" x="200" y="17" width="110" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="7qm-dP-WXT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1111" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEI-9c-YHI">
+                        <rect key="frame" x="126" y="17" width="66" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="5d9-yy-eyd"/>
+                            <constraint firstAttribute="width" constant="66" id="YCJ-uT-WbZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="S05-pE-Xzh" secondAttribute="bottom" constant="16" id="07f-aW-HHQ"/>
+                    <constraint firstAttribute="trailing" secondItem="S05-pE-Xzh" secondAttribute="trailing" constant="10" id="08s-AT-tl6"/>
+                    <constraint firstAttribute="bottom" secondItem="eEI-9c-YHI" secondAttribute="bottom" constant="16" id="0NC-kK-eAN"/>
+                    <constraint firstItem="eEI-9c-YHI" firstAttribute="leading" secondItem="ftQ-In-8wu" secondAttribute="trailing" constant="49" id="M8R-z2-dtq"/>
+                    <constraint firstItem="S05-pE-Xzh" firstAttribute="leading" secondItem="eEI-9c-YHI" secondAttribute="trailing" constant="8" id="Q2C-Dt-7el"/>
+                    <constraint firstItem="ftQ-In-8wu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="VfC-TB-eAi"/>
+                    <constraint firstAttribute="bottom" secondItem="ftQ-In-8wu" secondAttribute="bottom" constant="16" id="Xrx-Lj-md3"/>
+                    <constraint firstItem="ftQ-In-8wu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="ZtZ-9n-eh3"/>
+                    <constraint firstItem="S05-pE-Xzh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="g8S-Yb-NTn"/>
+                    <constraint firstItem="eEI-9c-YHI" firstAttribute="leading" secondItem="ftQ-In-8wu" secondAttribute="trailing" constant="49" id="iYM-gj-fRf"/>
+                    <constraint firstItem="eEI-9c-YHI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="x8i-Vy-dof"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lab1" destination="ftQ-In-8wu" id="Rds-1s-rFD"/>
+                <outlet property="lab2" destination="eEI-9c-YHI" id="rbR-56-K2i"/>
+                <outlet property="lab3" destination="S05-pE-Xzh" id="Giz-mH-Z7i"/>
+            </connections>
+            <point key="canvasLocation" x="483" y="292"/>
+        </tableViewCell>
+    </objects>
+</document>

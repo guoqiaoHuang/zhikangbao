@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Position2ViewController">
+            <connections>
+                <outlet property="one" destination="fyx-LV-gkd" id="3TQ-Lf-v1C"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="topRadioButtons" destination="X8m-aD-iqx" id="uaL-7S-eSK"/>
+                <outletCollection property="topRadioButtons" destination="mjV-I0-wRs" id="bm7-nG-1Jt"/>
+                <outletCollection property="topRadioButtons" destination="HiW-1K-tzt" id="HqF-nO-OHS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyx-LV-gkd">
+                    <rect key="frame" x="0.0" y="145" width="320" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HfE-Iu-hlq"/>
+                    </constraints>
+                    <state key="normal" title="点击查看">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="show:" destination="-1" eventType="touchUpInside" id="4Pz-YU-F9N"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiW-1K-tzt" customClass="DLRadioButton">
+                    <rect key="frame" x="0.0" y="13" width="320" height="43"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="iff-mb-NOk"/>
+                    </constraints>
+                    <state key="normal" title="最近一周">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <outletCollection property="otherButtons" destination="X8m-aD-iqx" id="ZFR-ZK-XgK"/>
+                        <outletCollection property="otherButtons" destination="mjV-I0-wRs" id="eB3-z0-G00"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjV-I0-wRs" customClass="DLRadioButton">
+                    <rect key="frame" x="0.0" y="102" width="320" height="42"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="BT9-fs-dEX"/>
+                    </constraints>
+                    <state key="normal" title="自定义日期">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="oneDayAction:" destination="-1" eventType="touchUpInside" id="cc5-hg-Gyg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8m-aD-iqx" customClass="DLRadioButton">
+                    <rect key="frame" x="0.0" y="57" width="320" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="bJg-HY-jLR"/>
+                    </constraints>
+                    <state key="normal" title="前三天">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="mjV-I0-wRs" firstAttribute="top" secondItem="X8m-aD-iqx" secondAttribute="bottom" constant="1" id="0fi-xb-Vel"/>
+                <constraint firstAttribute="trailing" secondItem="HiW-1K-tzt" secondAttribute="trailing" id="2X1-Lc-fJh"/>
+                <constraint firstItem="HiW-1K-tzt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Hq-mQ-1Ps"/>
+                <constraint firstItem="X8m-aD-iqx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4I5-3H-Ysz"/>
+                <constraint firstItem="X8m-aD-iqx" firstAttribute="top" secondItem="HiW-1K-tzt" secondAttribute="bottom" constant="1" id="8lE-6b-DWs"/>
+                <constraint firstItem="fyx-LV-gkd" firstAttribute="top" secondItem="mjV-I0-wRs" secondAttribute="bottom" constant="1" id="ARD-SV-w8N"/>
+                <constraint firstItem="fyx-LV-gkd" firstAttribute="top" secondItem="mjV-I0-wRs" secondAttribute="bottom" constant="1" id="PZU-gJ-kEu"/>
+                <constraint firstAttribute="trailing" secondItem="fyx-LV-gkd" secondAttribute="trailing" id="YzL-l5-Bzg"/>
+                <constraint firstAttribute="trailing" secondItem="X8m-aD-iqx" secondAttribute="trailing" id="Z7d-TG-hJI"/>
+                <constraint firstItem="X8m-aD-iqx" firstAttribute="top" secondItem="HiW-1K-tzt" secondAttribute="bottom" constant="1" id="et3-sm-D0r"/>
+                <constraint firstItem="HiW-1K-tzt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="13" id="jTx-S2-QHs"/>
+                <constraint firstItem="mjV-I0-wRs" firstAttribute="top" secondItem="X8m-aD-iqx" secondAttribute="bottom" constant="1" id="loW-ne-Oi8"/>
+                <constraint firstItem="fyx-LV-gkd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="p6N-m5-gmt"/>
+                <constraint firstItem="mjV-I0-wRs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qk2-id-Yah"/>
+                <constraint firstAttribute="trailing" secondItem="mjV-I0-wRs" secondAttribute="trailing" id="tjJ-Jh-K5Z"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="-166" y="168"/>
+        </view>
+    </objects>
+</document>
